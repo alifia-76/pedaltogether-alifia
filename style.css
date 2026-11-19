@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f7f0;
+    color: #344b3c;
+    line-height: 1.7;
+}
+
+header {
+    background: #263f32;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #b6d6a8;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #b6d6a8;
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(#172d2180, #172d2180),
+    center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 15px 0 30px;
+    color: #e0eadc;
+    font-style: italic;
+}
+
+.tombol {
+    background: #a4c58e;
+    color: #263f32;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+.tentang {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px 35px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    border-top: 5px solid #a4c58e;
+    scroll-margin-top: 100px;
+}
+
+.tentang h2,
+.Galeri h2,
+.kontak h2 {
+    color: #344b3c;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.tentang p {
+    text-align: justify;
+    color: #68766b;
+    font-size: 14px;
+    line-height: 2;
+}
+
+/* GALERI */
+.Galeri {
+    background: #e9eee4;
+    padding: 80px 20px;
+    text-align: center;
+    scroll-margin-top: 80px;
+}
+
+.Galeri h2 {
+    margin-bottom: 35px;
+}
+
+.gambar {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.gambar img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.gambar img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #344b3c30;
+}
+
+.kontak {
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 55px 25px;
+    text-align: center;
+    background: #344b3c;
+    color: white;
+    border-radius: 8px;
+    scroll-margin-top: 100px;
+}
+
+.kontak h2 {
+    color: #c5ddaF;
+}
+
+.kontak p {
+    color: #e0e9df;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #263f32;
+    color: #dce8d8;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .tentang,
+    .kontak {
+        margin: 40px 15px;
+        padding: 35px 20px;
+    }
+
+    .gambar {
+        grid-template-columns: 1fr;
+    }
+
+    .gambar img {
+        height: 250px;
+    }
+    .tentang h2,
+    .Galeri h2,
+    .kontak h2 {
+        font-size: 26px;
+    }
+}
